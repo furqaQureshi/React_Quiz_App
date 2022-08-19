@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Ali",
+        "location": "karachi",
+        "data": "Hii my name is ",
+        "unit": 32,
+        "types": 2,
+        "point": 2
+    },
+    {
+        "id": 1,
+        "name": "Ali",
+        "location": "karachi",
+        "data": "Hii my name is ",
+        "unit": 32,
+        "types": 2,
+        "point": 2
+    }
+]

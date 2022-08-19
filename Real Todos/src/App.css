@@ -1,0 +1,183 @@
+body {
+    background-color: #004196;
+}
+
+.start {
+    max-width: 700px;
+    background-color: #ffff;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    animation: fadeInRight 1s;
+    animation: fade 1s ease;
+}
+
+.start h5 {
+    font-size: 28px;
+    columns: #000000;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.start p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.start .btn {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 15px 45px;
+    border: 2px solid #00025e;
+    background-color: #004196;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quiz-text {
+    color: #009688;
+}
+
+.lead,
+h3 {
+    font-size: 24px;
+    color: #000000;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: 'montserrat', sans-serif;
+    padding: 10px;
+}
+
+.box-error>div {
+    max-width: 700px;
+    background-color: #ffff;
+    border-radius: 10px;
+    animation: fade 1s ease;
+}
+
+ @keyframes fade {
+    0% {
+        transform: translateX(40px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+} 
+
+.Quiz_Box {
+    max-width: 700px;
+    background-color: #ffff;
+    margin: 40px auto;
+    overflow: hidden;
+    height: 550px;
+    padding: 30px;
+    min-height: 570px;
+    border-radius: 10px;
+}
+
+.option p{
+    background-color: #cccccc;
+    padding: 13px 15px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    position: relative;
+}
+.option{
+    animation: tops .5s;
+}
+@keyframes tops {
+    0% {
+        transform: translateX(50px);
+    }
+    
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* box css  */
+.box {
+    display: flex;
+    gap: 3px;
+}
+
+.box > div {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: #cccccc;
+    border-radius: 50%;
+}
+
+.btn-next {
+    padding: 15px 45px;
+    border: 2px solid #00025e;
+    background-color: #004196;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.correct-images {
+    background-image: URL("https://webandmoibleapp-629e2.web.app/Images/quiz-image/correct.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+}
+
+.incorrect-images {
+    background-image: url("https://webandmoibleapp-629e2.web.app/Images/quiz-image/wrong.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+/*  correct animation in css */
+.option-left .correct {
+    background-color: #1db900;
+    width: 100%;
+    z-index: 1000;
+    animation: lefts .2s ease;
+    position: relative;
+    animation-direction: alternate;
+}
+
+.option-left .incorrect {
+    animation: lefts .2s ease;
+    background-color: #ec0000;
+    color: #fff;
+}
+@keyframes lefts {
+    0% {
+        transform: translateX(-70px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
